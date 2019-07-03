@@ -10,41 +10,25 @@ import Foundation
 import UIKit
 
 class FileNotebook {
-    private(set) var notes: [Note]
+    private(set) var notes: [String : Note]
     private let path: URL
     
-    init(notes: [Note] = []) {
+    init(notes: [String : Note] = [:]) {
         self.notes = notes
         path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
     }
     
     public func add(_ note: Note) {
-        for element in notes {
-            if element.uid == note.uid {
-                return
-            }
-        }
-        notes.append(note)
+        notes[note.uid] = note
     }
     
     public func remove(with uid: String) {
-        var ind: Int = -1
-        for (index, element) in notes.enumerated() {
-            if uid == element.uid {
-                ind = index
-                break
-            }
-        }
-        
-        if ind == -1 {
-            return
-        }
-        notes.remove(at: ind)
+        notes[uid] = nil
     }
     
     public func saveToFile() {
         var all: [[String: Any]] = []
-        for element in notes {
+        for (_, element) in notes {
             let dict: [String: Any] = element.json
             all.append(dict)
         }
