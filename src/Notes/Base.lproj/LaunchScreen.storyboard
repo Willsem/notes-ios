@@ -17,13 +17,35 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-xO-xOR">
+                                <rect key="frame" x="16" y="94" width="258" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.29280668521869702" green="0.30416126943005184" blue="0.29694834510017676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="create by alex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNB-9L-tnK">
+                                <rect key="frame" x="19" y="498" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29280668520000003" green="0.30416126939999999" blue="0.29694834510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.24650407672578678" green="0.76883244548363083" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tNB-9L-tnK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85.282993658310374" id="GZL-zD-6NP"/>
+                            <constraint firstItem="muZ-xO-xOR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103.99999999999989" id="HZ9-A0-15F"/>
+                            <constraint firstItem="muZ-xO-xOR" firstAttribute="centerX" secondItem="tNB-9L-tnK" secondAttribute="centerX" id="Z8m-cz-RcG"/>
+                            <constraint firstItem="muZ-xO-xOR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g72-4M-dCg"/>
+                            <constraint firstItem="muZ-xO-xOR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77.759907877279488" id="kkS-7f-iJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tNB-9L-tnK" secondAttribute="bottom" constant="75" id="sEq-Pc-pSO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="50.399999999999999" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>
