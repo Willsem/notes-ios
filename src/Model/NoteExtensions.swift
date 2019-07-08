@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CocoaLumberjack
 
 extension Note {
     static func parse(json: [String: Any]) -> Note? {

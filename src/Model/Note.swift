@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CocoaLumberjack
 
 struct Note {
     enum Importance: String {
@@ -35,5 +36,7 @@ struct Note {
         self.color = color
         self.importance = importance
         self.selfDestructionDate = selfDestructionDate
+        
+        DDLogInfo("create new note with uid: " + uid)
     }
 }
