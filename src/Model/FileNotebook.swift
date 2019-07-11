@@ -22,20 +22,20 @@ class FileNotebook {
     
     public func add(_ note: Note) {
         if notes[note.uid] != nil {
-            DDLogWarn("add note with existing uid: " + note.uid)
+            DDLogWarn("add note with existing uid: \(note.uid)")
         }
         
         notes[note.uid] = note
-        DDLogInfo("add new note with uid: " + note.uid)
+        DDLogInfo("add new note with uid: \(note.uid)")
     }
     
     public func remove(with uid: String) {
         if notes[uid] == nil {
-            DDLogWarn("delete note with nonexisting uid: " + uid)
+            DDLogWarn("delete note with nonexisting uid: \(uid)")
         }
         
         notes[uid] = nil
-        DDLogInfo("delete note with uid: " + uid)
+        DDLogInfo("delete note with uid: \(uid)")
     }
     
     public func saveToFile() {

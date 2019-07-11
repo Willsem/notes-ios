@@ -37,6 +37,6 @@ struct Note {
         self.importance = importance
         self.selfDestructionDate = selfDestructionDate
         
-        DDLogInfo("create new note with uid: " + uid)
+        DDLogInfo("create new note with uid: \(uid)")
     }
 }
