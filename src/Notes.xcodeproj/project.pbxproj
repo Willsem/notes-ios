@@ -84,7 +84,6 @@
 				C0A2CFAECE89696EB92C442B /* Pods-NotesTests.release.xcconfig */,
 				EB29B1FD7FC803CBB5E323D6 /* Pods-NotesTests.releasefreeversion.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
