@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="PSB-5c-cbl">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="0Nt-1J-1EX"/>
-                                    <constraint firstAttribute="width" constant="300" id="89o-fb-ax0"/>
+                                    <constraint firstAttribute="height" constant="150" id="0Nt-1J-1EX"/>
+                                    <constraint firstAttribute="width" constant="150" id="89o-fb-ax0"/>
                                 </constraints>
                             </imageView>
                         </subviews>
